@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#5D11BB"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ea660f"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fecha_multa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/valor_multa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/prestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_weight="2"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/usuario_multado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/estado_multa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textColor="@color/dark_brown"
+                        android:text="" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/ic_edit"
+                    android:textColorLink="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_delete"
+                    android:textColorLink="#FFFFFF" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
